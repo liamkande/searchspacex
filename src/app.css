@@ -1,0 +1,93 @@
+
+a{
+  color:white;
+}
+
+.container{
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form{
+  font-family: "Inconsolata", monospace;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 25px 0;
+}
+
+.field{
+  font-size: 24px;
+  font-weight: 700;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.result-container{
+  margin-top: 25px;
+}
+
+input {
+  border:none;
+  text-transform: uppercase;
+  font-family: 'Roboto Mono', monospace;
+}
+
+input:focus {
+  outline:0;
+}
+
+.row{
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+  max-width: 400px;
+}
+
+.results{
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+.launch{
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 0 10px;
+  align-content: center;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.launch-video{
+  height: 75px;
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:green;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+.launch-video img{
+  height: 25px;
+  margin-bottom: 10px
+}
+
+@media only screen and (min-width: 450px){
+  .container{
+    width:auto;
+  }
+  .form{
+    width: 400px;
+    margin: 50px 0;
+  }
+}
